@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johnny De Witte — Technicien Informatique</title>
+  <meta name="description" content="CV numérique de Johnny De Witte, technicien informatique N1.5">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Notre feuille de style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ BARRE DE NAVIGATION ============ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-tag">JDW</span><span class="brand-cursor">_</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">01 · Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">02 · Expérience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">03 · Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">04 · Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="hero" class="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="row align-items-center gy-5">
+
+        <!-- Colonne texte -->
+        <div class="col-lg-6">
+          <div class="status-pill mb-4" id="statusPill">
+            <span class="status-dot"></span>
+            <span id="statusText">SYSTÈME&nbsp;: OPÉRATIONNEL</span>
+          </div>
+
+          <p class="eyebrow">Technicien Informatique N1.5 · Tenexa × Autodistribution</p>
+          <h1 class="hero-title">
+            Bonjour, je suis<br>
+            <span class="hero-name">Johnny De Witte</span><span class="type-cursor" id="typeCursor">|</span>
+          </h1>
+          <p class="hero-subtitle" id="heroSubtitle"></p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#contact" class="btn btn-cta-primary">
+              <i class="bi bi-send-fill me-2"></i>Me contacter
+            </a>
+            <a href="assets/CV-Johnny-De-Witte.pdf" download class="btn btn-cta-download">
+              <i class="bi bi-download me-2"></i>Télécharger mon CV
+            </a>
+            <a href="#experience" class="btn btn-cta-ghost">
+              Voir mon parcours <i class="bi bi-arrow-down-short"></i>
+            </a>
+          </div>
+
+          <div class="hero-meta mt-5">
+            <div class="hero-meta-item">
+              <i class="bi bi-geo-alt"></i> Amiens, 80000
+            </div>
+            <div class="hero-meta-item">
+              <i class="bi bi-car-front"></i> Permis B · Véhiculé
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne widget ticketing -->
+        <div class="col-lg-6">
+          <div class="ticket-widget">
+            <div class="ticket-widget-header">
+              <div class="ticket-window-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="ticket-widget-title">easyvista://file-d-attente</span>
+              <span class="uptime-counter" id="uptimeCounter">00:00:00</span>
+            </div>
+            <div class="ticket-widget-body" id="ticketQueue">
+              <!-- tickets injectés par JavaScript -->
+            </div>
+            <div class="ticket-widget-footer">
+              <span><i class="bi bi-check2-circle"></i> Tickets résolus aujourd'hui : <strong id="resolvedCount">0</strong></span>
+              <span class="live-dot"><i class="bi bi-broadcast"></i> EN DIRECT</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Défiler vers le bas">
+      <span></span>
+    </a>
+  </header>
+
+  <!-- ============ PROFIL / A PROPOS ============ -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <div class="row gy-5 align-items-center">
+        <div class="col-lg-5">
+          <p class="section-eyebrow">01 · Profil</p>
+          <h2 class="section-title">Curieux, Passionné,<br>toujours en action.</h2>
+          <div class="photo-frame">
+            <img src="assets/johnny.jpg" alt="Photo de Johnny De Witte" class="img-fluid">
+            <span class="photo-tag">#TCK-ID · johnnydwtt</span>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="about-text">
+            Passionné par les nouvelles technologies, j'aime transformer les problèmes en solutions et rendre l'informatique plus accessible.
+            Curieux, pédagogue et orienté utilisateur, je prends plaisir à résoudre des incidents, partager mes connaissances et accompagner les personnes avec professionnalisme et bienveillance.
+          </p>
+
+          <div class="tag-row">
+            <span class="trait-tag">#P&Eacute;DAGOGUE</span>
+            <span class="trait-tag">#CURIEUX</span>
+            <span class="trait-tag">#SOCIABLE</span>
+            <span class="trait-tag">#JOYEUX</span>
+            <span class="trait-tag">#RIGOUREUX</span>
+          </div>
+
+          <div class="row mt-5 g-4">
+            <div class="col-6 col-md-4">
+              <p class="stat-number" data-count="95">0</p>
+              <p class="stat-label">% de résolution des demandes au premier contact</p>
+            </div>
+            <div class="col-6 col-md-4">
+              <p class="stat-number" data-count="100">0</p>
+              <p class="stat-label">% de dossiers traités dans les délais</p>
+            </div>
+            <div class="col-6 col-md-4">
+              <p class="stat-number" data-count="100">0</p>
+              <p class="stat-label">% d'implication dans le suivi des utilisateurs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPÉRIENCE ============ -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <p class="section-eyebrow">02 · File d'attente des expériences</p>
+      <h2 class="section-title text-light">Chaque poste, un ticket traité.</h2>
+
+      <div class="ticket-queue-list mt-5">
+
+        <!-- Ticket 3 : poste actuel -->
+        <article class="job-ticket is-open">
+          <div class="job-ticket-marker"></div>
+          <div class="job-ticket-card">
+            <div class="job-ticket-top">
+              <span class="job-ticket-id">#TCK-0003</span>
+              <span class="job-status status-open">EN COURS</span>
+              <span class="job-dates">Depuis 09/2023</span>
+            </div>
+            <h3 class="job-title">Technicien Informatique N1</h3>
+            <p class="job-company"><i class="bi bi-building"></i> Tenexa — client Autodistribution</p>
+            <ul class="job-list">
+              <li>Support informatique polyvalent, gestion des incidents de niveaux 1 à 2 en environnement <strong>Windows</strong> (Windows 7 à Windows 11).</li>
+              <li>Administration de comptes et GPO dans <strong>Active Directory</strong> (Windows Server 2008 à Azure), gestion des serveurs d'impression.</li>
+              <li>Support messagerie (<strong>Exchange, Office 365</strong>), installation et maintenance des logiciels métiers et bureautiques (ERP MOVEX, CITRIX, Microsoft Office, Odigo).</li>
+              <li>Assistance aux utilisateurs sur site et à distance (<strong>TeamViewer, LogMein, Assistance rapide</strong>), en français.</li>
+              <li>Création, suivi et clôture des tickets via <strong>EasyVista</strong> — analyse et résolution des incidents techniques.</li>
+              <li>Support applicatif et bureautique sur postes fixes, portables, tablettes et smartphones Android/IOS.</li>
+              <li>Support sur les environnements réseaux : LAN, WLAN, VPN, partages de dossiers.</li>
+              <li>Rédaction de procédures, formation des nouveaux arrivants, accompagnement utilisateur au quotidien.</li>
+            </ul>
+          </div>
+        </article>
+        <!-- Ticket 2 -->
+        <article class="job-ticket is-closed">
+          <div class="job-ticket-marker"></div>
+          <div class="job-ticket-card">
+            <div class="job-ticket-top">
+              <span class="job-ticket-id">#TCK-0002</span>
+              <span class="job-status status-closed">RÉSOLU</span>
+              <span class="job-dates">04/2022</span>
+            </div>
+            <h3 class="job-title">Conseiller de Vente</h3>
+            <p class="job-company"><i class="bi bi-building"></i> Bouygues Télécom</p>
+            <ul class="job-list">
+              <li>Objectifs de vente mensuels atteints à <strong>120 %</strong> grâce à une connaissance produit pointue et une approche client personnalisée.</li>
+              <li>Accompagnement personnalisé des clients : analyse des besoins, conseil, fidélisation et proposition de solutions adaptées pour améliorer l’expérience client.</li>
+              <li>Formé à la culture d'entreprise : Collectifs, Emphatiques, Proactifs, Honnêtes, Inspirants.</li>
+              <li>Mise en place d'un système de suivi des clients, <strong>+10 %</strong> de satisfaction client.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Ticket 1 -->
+        <article class="job-ticket is-closed">
+          <div class="job-ticket-marker"></div>
+          <div class="job-ticket-card">
+            <div class="job-ticket-top">
+              <span class="job-ticket-id">#TCK-0001</span>
+              <span class="job-status status-closed">RÉSOLU</span>
+              <span class="job-dates">06/2020 — 06/2021</span>
+            </div>
+            <h3 class="job-title">Agent d'expédition</h3>
+            <p class="job-company"><i class="bi bi-building"></i> Auchan</p>
+            <ul class="job-list">
+              <li>Préparation des marchandises selon les commandes, organisation par lots ou colis selon leurs particularités et modes de transport.</li>
+              <li>Optimisation de la préparation des commandes, <strong>-15 %</strong> de temps de traitement.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Formation -->
+      <div class="row mt-5 pt-4 g-4">
+        <div class="col-12">
+          <p class="section-eyebrow">Formation</p>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card">
+            <span class="job-ticket-id">01/2026</span>
+            <h4>Dell GenAI Foundations</h4>
+            <p>Dell Technologies</p>
+            <a href="https://www.credly.com/badges/be52f744-5fb9-477e-bef5-f405cdfab69e/linked_in_profile?trk=public_profile_see-credential" target="_blank">Certification</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card">
+            <span class="job-ticket-id">07/2022</span>
+            <h4>Formation IOBSP – Intermédiaire en Opérations de Banque et Services de Paiement</h4>
+            <p>Niveau III (150 heures) – Blearn</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card">
+            <span class="job-ticket-id">07/2022</span>
+            <h4>Formation réglementaire Assurance</h4>
+            <p>Niveau III (150 heures) – Blearn</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card">
+            <span class="job-ticket-id">06/2021</span>
+            <h4>Développeur Web et Web Mobile — Niveau 5</h4>
+            <p>Ecole des métiers numérique La Manu</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card">
+            <span class="job-ticket-id">09/2017</span>
+            <h4>Baccalauréat STMG — option Ressources Humaines</h4>
+            <p>Lycée Edouard Gand</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPÉTENCES ============ -->
+  <section id="skills" class="section section-light">
+    <div class="container">
+      <p class="section-eyebrow">03 · Charge système</p>
+      <h2 class="section-title">Compétences &amp; outils.</h2>
+
+      <div class="row g-5 mt-3">
+        <div class="col-lg-4">
+          <h3 class="skill-group-title"><i class="bi bi-headset"></i> Support &amp; IT</h3>
+          <div class="skill-bar" data-value="90"><span class="skill-name">Easyvista (ticketing)</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+          <div class="skill-bar" data-value="90"><span class="skill-name">Prise en main à distance</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+          <div class="skill-bar" data-value="80"><span class="skill-name">Administration Office 365</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+          <div class="skill-bar" data-value="75"><span class="skill-name">VM Azure</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+          <div class="skill-bar" data-value="78"><span class="skill-name">Serveurs d'impression</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        </div>
+
+        <div class="col-lg-4">
+          <h3 class="skill-group-title"><i class="bi bi-code-slash"></i> Développement</h3>
+          <div class="skill-bar" data-value="85"><span class="skill-name">HTML / CSS</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+          <div class="skill-bar" data-value="80"><span class="skill-name">JavaScript</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+          <div class="skill-bar" data-value="70"><span class="skill-name">PHP</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+          <div class="skill-bar" data-value="70"><span class="skill-name">MySQL</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+        </div>
+
+        <div class="col-lg-4">
+          <h3 class="skill-group-title"><i class="bi bi-translate"></i> Langues</h3>
+          <div class="skill-bar" data-value="100"><span class="skill-name">Français — Courant</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+          <div class="skill-bar" data-value="45"><span class="skill-name">Anglais — Apprentissage</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+
+          <h3 class="skill-group-title mt-5"><i class="bi bi-controller"></i> Loisirs</h3>
+          <div class="tag-row">
+            <span class="trait-tag"><i class="bi bi-music-note-beamed"></i> Musique</span>
+            <span class="trait-tag"><i class="bi bi-trophy"></i> Sport</span>
+            <span class="trait-tag"><i class="bi bi-cpu"></i> Informatique</span>
+            <span class="trait-tag"><i class="bi bi-controller"></i> Jeux vidéo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section-dark contact-section">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-between align-items-end gy-5">
+        <div class="col-lg-6">
+          <div class="status-pill mb-4">
+            <span class="status-dot"></span>
+            <span>DISPONIBLE POUR UNE NOUVELLE OPPORTUNITÉ</span>
+          </div>
+          <h2 class="section-title text-light">Ouvrons<br>un ticket ensemble.</h2>
+          <p class="about-text text-light-50">
+            Une opportunité à me proposer ? Discutons-en, je réponds vite.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="contact-list">
+            <a href="mailto:johnnydwtt@gmail.com" class="contact-line">
+              <i class="bi bi-envelope-fill"></i>
+              <span>johnnydwtt@gmail.com</span>
+            </a>
+            <a href="tel:0778358072" class="contact-line">
+              <i class="bi bi-telephone-fill"></i>
+              <span>07 78 35 80 72</span>
+            </a>
+            <a href="https://github.com/johnnydwtt" target="_blank" rel="noopener" class="contact-line">
+              <i class="bi bi-github"></i>
+              <span>github.com/johnnydwtt</span>
+            </a>
+            <div class="contact-line contact-line-static">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Amiens, 80000</span>
+            </div>
+            <a href="assets/CV-Johnny-De-Witte.pdf" download class="contact-line contact-line-cv">
+              <i class="bi bi-file-earmark-arrow-down-fill"></i>
+              <span>Télécharger mon CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-row mt-5 pt-4">
+        <p class="mb-0">© <span id="year"></span> Johnny De Witte — Tous les tickets sont clôturés avec le sourire.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOUTON FLOTTANT — TÉLÉCHARGER LE CV ============ -->
+  <a href="assets/CV-Johnny-De-Witte.pdf" download class="floating-cv-btn" aria-label="Télécharger mon CV en PDF">
+    <i class="bi bi-file-earmark-arrow-down-fill"></i>
+    <span class="floating-cv-label">Télécharger mon CV</span>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Notre script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
